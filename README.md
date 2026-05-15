@@ -59,6 +59,7 @@ graph TD
 -   **🚀 Real-Time Scanning**: Sub-100ms inference time using optimized XGBoost models.
 -   **🔍 Multi-Vector Analysis**: Extracts URL-based, content-based, and domain-level features.
 -   **💎 Heuristic Guard**: Specialized regex-based protection against impersonation of major brands (Amazon, PayPal, Google, etc.).
+-   **🤖 AI Agent Skill**: Native integration for Autonomous Agents (Antigravity/Gemini) to prevent accidental phishing interaction.
 -   **📊 Intelligence Dashboard**: A glassmorphism-inspired UI for visual risk assessment and telemetry.
 -   **🐳 Container Ready**: Seamless deployment using Docker and Docker Compose.
 
