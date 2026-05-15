@@ -1,0 +1,12 @@
+{
+  "name": "phishshield-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for PhishShield AI",
+  "main": "app.js",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 --cors"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishShield AI | Advanced URL Protection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">🛡️</span>
+            <span class="logo-text">PhishShield <span class="accent">AI</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Scanner</a>
+            <a href="#">Analysis</a>
+            <a href="#">History</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <h1>Stay Ahead of <span class="gradient-text">Cyber Threats</span></h1>
+            <p>Our neural engine analyzes over 24 unique URL features to detect phishing attempts with 99% accuracy.</p>
+        </header>
+
+        <section class="scanner-section">
+            <div class="scanner-card">
+                <div class="input-group">
+                    <input type="text" id="urlInput" placeholder="Enter URL to analyze (e.g., https://secure-login.com)" autocomplete="off">
+                    <button id="scanBtn">
+                        <span class="btn-text">Analyze URL</span>
+                        <span class="btn-loader hidden"></span>
+                    </button>
+                </div>
+                <p class="input-hint">Scanning is processed in real-time by our ML model on Port 8002</p>
+            </div>
+        </section>
+
+        <section id="resultSection" class="result-section hidden">
+            <div class="result-card" id="resultCard">
+                <div class="result-header">
+                    <div class="status-badge" id="statusBadge">Checking...</div>
+                    <div class="confidence-meter">
+                        <span class="meter-label">Confidence Score</span>
+                        <div class="meter-bar">
+                            <div class="meter-fill" id="confidenceFill"></div>
+                        </div>
+                        <span class="meter-value" id="confidenceValue">0%</span>
+                    </div>
+                </div>
+                <div class="result-body">
+                    <h3 id="resultTitle">Analyzing URL Safety</h3>
+                    <p id="resultDesc">Our engine is dissecting the URL structure, entropy, and domain metadata.</p>
+                    
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="label">Risk Level</span>
+                            <span class="value" id="riskScore">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Features Analyzed</span>
+                            <span class="value" id="featuresCount">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Model Version</span>
+                            <span class="value">v1.0-Stable</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-footer">
+                    <button class="secondary-btn" onclick="resetScanner()">Scan Another</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Entropy Analysis</h3>
+                <p>Detects randomly generated domains common in DGA attacks.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>TLD Reputation</h3>
+                <p>Weights scores based on top-level domain historical safety data.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚙️</div>
+                <h3>Heuristic Engine</h3>
+                <p>Identifies character substitution (punycode) and typosquatting.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 PhishShield AI. Powered by FastAPI & Scikit-Learn.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

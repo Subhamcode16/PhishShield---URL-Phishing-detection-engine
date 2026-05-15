@@ -1,0 +1,40 @@
+# Core
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+imbalanced-learn
+optuna
+joblib
+
+# Feature Extraction
+tldextract
+urllib3
+beautifulsoup4
+requests
+
+# API
+fastapi
+uvicorn
+pydantic
+motor
+pymongo
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Notebooks
+jupyter
+notebook
+jupyter_http_over_ws
+ipykernel
+
+# Testing
+pytest
+httpx
+
+# Data Loading
+ucimlrepo

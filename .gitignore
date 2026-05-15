@@ -1,0 +1,53 @@
+# Environment Variables
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+.pytest_cache/
+
+# Data & Models
+data/raw/
+data/processed/
+data/interim/
+models/saved/*.joblib
+models/saved/*.pkl
+models/reports/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+planner_debug.log
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Frontend
+node_modules/
+dist/
+build/
