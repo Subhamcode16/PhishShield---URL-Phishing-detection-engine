@@ -149,6 +149,20 @@ phishshield-ai/
 
 ---
 
+## 🤖 AI Agent Integration (Open-Source Skill)
+
+PhishShield AI is an **Open-Source** project designed to be used as a "Security Skill" by Autonomous AI Agents (like Antigravity, Gemini, or AutoGPT). This prevents agents from accidentally leaking data on phishing clones.
+
+### How to apply the skill:
+1.  **Clone the Repository**: Ensure the PhishShield API is accessible to your agent.
+2.  **Start the Engine**: Run `./start-app.bat` to launch the FastAPI server on port `8002`.
+3.  **Install the Skill**: Copy the logic from `docs/AI_SKILLS.md` into your agent's system instructions or skill directory.
+4.  **Interceptor Pattern**: Configure your agent to call the `/predict` endpoint before every browser navigation.
+
+For detailed integration steps, see the **[AI Agent Integration Guide](docs/AI_SKILLS.md)**.
+
+---
+
 ## 🤝 Contributing
 
 1.  Fork the Project.
